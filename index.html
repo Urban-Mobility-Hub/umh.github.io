@@ -27,6 +27,8 @@
 	<link href="css/style.css" rel="stylesheet">
 	<!-- Custom styles AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Video player -->
+	<link href="https://vjs.zencdn.net/7.20.1/video-js.css" rel="stylesheet" />
 
 </head>
 
@@ -81,30 +83,38 @@
 		<div id="about" class="container page">
 			<div class="col-md-12">
 				<div data-aos="fade-up" data-aos-duration="1000">
-					<p class="green-text text-darken-3 d-flex justify-content-start title">
+					<p class="green-text text-darken-3 d-flex justify-content-center title">
 						About the project
 					</p>
-					<hr class="left-text green">
-					<article>
+					<article class="pt-3">
 						<p align="justify">
-							We don't need to explain how bad the planet is, with global warming, melting ice, floods and forest fires. This project aims to be a hub that brings together different services that will allow people who are involved in making ecological decisions for cities, to be able to help the planet to recover its health a little.						</p>
+							We don't need to explain how bad the planet is, with global warming, melting ice, floods and
+							forest fires. This project aims to be a hub that brings together different services that
+							will allow people who are involved in making ecological decisions for cities, to be able to
+							help the planet to recover its health a little. </p>
 						<p align="justify">
-							It could contain services that give information about fine particle pollution, if the car drivers have an ecological driving, and even information about noise pollution. Because yes, noise pollution impacts nature.
-												</p>
+							It could contain services that give information about fine particle pollution, if the car
+							drivers have an ecological driving, and even information about noise pollution. Because yes,
+							noise pollution impacts nature.
+						</p>
 						<p align="justify">
-							The first service developed focuses on data from electric vehicle charging spots. This data will be accessible via a dashboard to be able to analyze it, and via a mobile application to help electric car drivers in their search for charging spots.							</article>
+							The first service developed focuses on data from electric vehicle charging spots. This data
+							will be accessible with a dashboard to be able to analyze it, and with a mobile application
+							to
+							help electric car drivers in their search for charging spots.
+					</article>
 				</div>
 				<div data-aos="fade-up" data-aos-duration="1000">
 					<h1 class="green-text text-darken-3 d-flex justify-content-start">What's included</h1>
 					<div class="row">
-						<div class="col-sm py-3 mx-2">
-							<div class="card green lighten-1 card-skill">
-								<img src="./img/dashboard.png"  alt="logo">
+						<div class="col-sm py-3 mx-2 ">
+							<div class="card green lighten-1 card-skill w-50 mx-auto">
+								<img src="./img/dashboard.png" alt="logo">
 							</div>
 						</div>
 						<div class="col-sm py-3 mx-2">
-							<div class="card green lighten-1 card-skill">
-								<img src="./img/map.png"  alt="logo">
+							<div class="card green lighten-1 card-skill w-50 mx-auto">
+								<img src="./img/map.png" alt="logo">
 							</div>
 						</div>
 
@@ -115,44 +125,99 @@
 		<div id="dashboard" class="page grey lighten-2" data-aos="fade-up" data-aos-duration="1000">
 			<div class="container">
 				<div class="col-md-12">
-					<p class="green-text text-darken-3 d-flex justify-content-end title">
-						Dashboard </p>
-					<hr class="right-text green">
-					<article>
-						<p align="justify">
-							The dashboard is a tool that gathers the services and contains elements to analyze them. The developed services are independent of the dashboard. They only need to respect some development rules to be attached to the Hub. 
-						</p>
-						<p align="justify">
-							Currently, the dashboard already contains analysis tools. Among them, you will find a map to visualize your data, and graphs to observe the evolution of your data. It is the administrator who chooses what type of data should be displayed, and the decision-makers will be able to observe these data.						
-						</p>
-						<p align="justify">
-							The list of services can be modified according to the city. Some services may not be interesting for a city.
-						</p>
-						<p align="justify">
-							The administrator has various management tools, including a tool to manage machine learning models for the collected data.
+					<p class="green-text text-darken-3 d-flex justify-content-center title">
+						UMH Dashboard </p>
+					<article class="py-2">
+						<p class="sub-title text-center">
+							A management tool that gathers services and contains elements to analyze them.
 						</p>
 					</article>
-
+					<div class="row h-100  py-4">
+						<div class="col-md my-auto py-3">
+							<div class="">
+								<p class="green-text text-darken-3 d-flex justify-content-start info">Services</p>
+								<article>
+									<p class="sub-info">
+										Select services and grants access to selected cities.
+									</p>
+								</article>
+							</div>
+						</div>
+						<div class="col-md ">
+							<img src="./img/dashboard/services.png" alt="Service management" width="100%">
+						</div>
+					</div>
+					<div class="row h-100 py-4">
+						<div class="col-md ">
+							<img src="./img/dashboard/map.png" alt="Widget management" width="100%">
+						</div>
+						<div class="col-md my-auto py-3">
+							<div class="">
+								<p class="green-text text-darken-3 d-flex justify-content-start info">Widgets</p>
+								<article>
+									<p class="sub-info">
+										Select the source and the widget that you want to display.
+									</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="row h-100  py-4">
+						<div class="col-md my-auto py-3">
+							<div class="">
+								<p class="green-text text-darken-3 d-flex justify-content-start info">Machine Learning</p>
+								<article>
+									<p class="sub-info">
+										Manage and train your service model as you want.
+									</p>
+								</article>
+							</div>
+						</div>
+						<div class="col-md ">
+							<img src="./img/dashboard/learning.png" alt="Service management" width="100%">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div id="map" class="container page" data-aos="fade-up" data-aos-duration="1000">
 			<div class="col-md-12">
 				<div>
-					<p class="green-text text-darken-3 d-flex justify-content-start title">
+					<p class="green-text text-darken-3 d-flex justify-content-center title">
 						Charging spots Map </p>
-					<hr class="left-text green">
-					<article>
-						<p align="justify">
-							The Charging Spots Map application is a mobile application that improves the user experience for electric car drivers. Indeed, the problem that sometimes prevents from choosing an electric car is its battery. 
-						</p>
-						<p align="justify">
-							The application is working on this axis. You may not have enough autonomy to make long trips, and you don't know where to find a charging spots. You can spend hours looking for the right charging station, because you want it to be near a place and fast enough to not wait hours for a recharge without doing anything. Then it is possible that when you get to the charging spots, all the outlets are occupied.
-						</p>
-						<p align="justify">
-							To do this, the application uses data retrieved by the charging spots service and a machine learning model to suggest the best charging spots to the driver based on his search parameters.
+					<article class="py-3">
+						<p class="sub-title text-center">
+							Improves the user experience for electric car drivers.
 						</p>
 					</article>
+					<div class="row h-100 ">
+						<div class="col-md my-auto">
+							<div class="">
+								<p class="green-text text-darken-3 d-flex justify-content-start info">Demonstration</p>
+								<article>
+									<p class="sub-info">
+										Process of researching a route in the south of France in function of the
+										preferences of the driver.
+									</p>
+								</article>
+							</div>
+						</div>
+						<div class="col-md ">
+							<div class="">
+								<video id="my-video" class="video-js mx-auto" controls preload="auto"
+									poster="./img/map-green.png" data-setup='{"fluid": true}'>
+									<source src="MY_VIDEO.mp4" type="video/mp4" />
+									<source src="MY_VIDEO.webm" type="video/webm" />
+									<p class="vjs-no-js">
+										To view this video please enable JavaScript, and consider upgrading to a
+										web browser that
+										<a href="https://videojs.com/html5-video-support/" target="_blank">supports
+											HTML5 video</a>
+									</p>
+								</video>
+							</div>
+						</div>
+					</div>
 				</div>
 				<br>
 			</div>
@@ -166,11 +231,10 @@
 						<div class="text-center border border-light p-5 white">
 							<p class="green-text text-darken-3 text-center title">
 								Keep in contact </p>
-							<hr class="text-center green">
-							<p class="mt-5 mb-4">
+							<p class="mt-5 sub-info mb-4">
 								Do you have any questions? Please do not hesitate to contact us directly. Our team will
 								come back to you within a matter of hours to answer your question.</p>
-							<div class="row"> 
+							<div class="row">
 								<div class="col-md-4">
 									<i class="fas fa-map-marker-alt mt-4 fa-2x"></i>
 									<p>Taltech, Ehitajate tee 5, 12616 Tallinn, Estonia</p>
@@ -244,6 +308,8 @@
 	<script type="text/javascript" src="js/modules/smoothScroll.js"></script>
 	<!-- AOS JavaScript -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- Video player -->
+	<script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
 	<!-- Init modules JavaScript -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

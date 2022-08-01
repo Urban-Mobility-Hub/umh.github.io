@@ -47,7 +47,9 @@ nav{
 	margin-left: 0;
 }
 .title {
-	font-size: 3.5rem;
+  font-size: 48px;
+  line-height: 57px;
+  font-weight: 700;
 }
 .page {
 	padding-top: 80px; 
@@ -62,10 +64,24 @@ main {
 }
 body {
 	margin: 0;
+  font-family: GraphikSemiBold,sans-serif !important;
 }
 .navbar-dark .navbar-nav .nav-link.active {
   font-weight: bold;
 }
 .show {
   display: block !important;
+}
+.sub-info {
+  font-size: 18px;
+}
+.sub-title {
+  font-size: 22px;
+  margin: auto;
+  max-width: 768px;
+}
+.info {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
 }
