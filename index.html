@@ -29,7 +29,8 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Video player -->
 	<link href="https://vjs.zencdn.net/7.20.1/video-js.css" rel="stylesheet" />
-
+	<!-- Custom styles GlideJs -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,10 +50,10 @@
 								<a class="nav-link scroll" href="#home"><span
 										class="clearfix d-none d-sm-inline-block">Home</span></a>
 							</li>
-							<li class="nav-item"><a class="nav-link scroll" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link scroll" href="#abstract">Abstract</a></li>
 							<li class="nav-item"><a class="nav-link scroll" href="#dashboard">Dashboard</a></li>
-							<li class="nav-item"><a class="nav-link scroll" href="#map">Map</a></li>
-							<li class="nav-item"><a class="nav-link scroll" href="#contact">Keep in contact</a></li>
+							<li class="nav-item"><a class="nav-link scroll" href="#services">Services</a></li>
+							<li class="nav-item"><a class="nav-link scroll" href="#team">Team</a></li>
 					</div>
 				</div>
 			</div>
@@ -71,7 +72,7 @@
 					</div>
 				</div>
 				<a id="skip" class="animated fadeInLeft text-center white-text wow fadeInUp animated bounce infinite"
-					href="#about">
+					href="#abstract">
 					<h1><i class="material-icons">keyboard_arrow_down</i></h1>
 				</a>
 			</div>
@@ -80,11 +81,11 @@
 	<!--Main Navigation-->
 	<!--Main Layout-->
 	<main class="green lighten-5">
-		<div id="about" class="container page">
+		<div id="abstract" class="container page">
 			<div class="col-md-12">
 				<div data-aos="fade-up" data-aos-duration="1000">
 					<p class="green-text text-darken-3 d-flex justify-content-center title">
-						About the project
+						Abstract
 					</p>
 					<article class="pt-3">
 						<p align="justify">
@@ -114,25 +115,18 @@
 								</article>
 							</div>
 						</div>
-						<div class="col-md py-3">
-							<img src="./img/objective.png" alt="Service management" width="100%">
+						<div class="glide col-md-6 py-3">
+								<div class="glide__track" data-glide-el="track" style=" max-width: 100% !important;">
+									<ul class="glide__slides">
+										<li class="glide__slide "><img src="./img/objective1.png" alt="Service management" width="100%"></li>
+										<li class="glide__slide"><img src="./img/objective2.png" alt="Service management" width="100%"></li>
+									</ul>
+								</div>
+								<div class="glide__bullets text-center" data-glide-el="controls[nav]">
+								    <button class="glide__bullet" data-glide-dir="=0"></button>
+								    <button class="glide__bullet" data-glide-dir="=1"></button>
+								  </div>
 						</div>
-					</div>
-				</div>
-				<div data-aos="fade-up" data-aos-duration="1000">
-					<h1 class="green-text text-darken-3 d-flex justify-content-start">What's included</h1>
-					<div class="row">
-						<div class="col-sm py-3 mx-2 ">
-							<div class="card green darken-3  card-skill w-50 mx-auto">
-								<img src="./img/dashboard.png" alt="logo">
-							</div>
-						</div>
-						<div class="col-sm py-3 mx-2">
-							<div class="card green darken-3 card-skill w-50 mx-auto">
-								<img src="./img/map.png" alt="logo">
-							</div>
-						</div>
-
 					</div>
 				</div>
 			</div>
@@ -180,7 +174,8 @@
 					<div class="row h-100  py-4">
 						<div class="col-md my-auto py-3">
 							<div class="">
-								<p class="green-text text-darken-3 d-flex justify-content-start info">Machine Learning</p>
+								<p class="green-text text-darken-3 d-flex justify-content-start info">Machine Learning
+								</p>
 								<article>
 									<p class="sub-info">
 										Manage and train your service model as you want.
@@ -195,47 +190,118 @@
 				</div>
 			</div>
 		</div>
-		<div id="map" class="container page" data-aos="fade-up" data-aos-duration="1000">
+		<div id="services" class="container page" data-aos="fade-up" data-aos-duration="1000">
 			<div class="col-md-12">
-				<div>
-					<p class="green-text text-darken-3 d-flex justify-content-center title">
-						Charging spots Map </p>
-					<article class="py-3">
-						<p class="sub-title text-center">
-							Improves the user experience for electric car drivers.
-						</p>
-					</article>
-					<div class="row h-100 ">
-						<div class="col-md my-auto">
-							<div class="">
-								<p class="green-text text-darken-3 d-flex justify-content-start info">Demonstration</p>
-								<article>
-									<p class="sub-info">
-										Process of researching a route in the south of France in function of the
-										preferences of the driver.
-									</p>
-								</article>
+				<p class="green-text text-darken-3 d-flex justify-content-center title">
+					Services</p>
+					<div class="text-center mb-4">
+						<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)">Charging spots</button>
+						<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(1)">Urban noise</button>
+						<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">CO2 emission</button>
+					</div>
+					<div id="service-0" class="service ">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+						<article class="pt-3">
+							<p align="justify">
+								Description </p>
+						</article>
+						<div class="row h-100 ">
+							<div class="col-md my-auto">
+								<div class="">
+									<p class="green-text text-darken-3 d-flex justify-content-start info">Demonstration</p>
+									<article>
+										<p class="sub-info">
+											Process of researching a route in the south of France in function of the
+											preferences of the driver.
+										</p>
+									</article>
+								</div>
+							</div>
+							<div class="col-md ">
+								<div class="">
+									<video id="my-video" class="video-js mx-auto" controls preload="auto"
+										poster="./img/map-green.png" data-setup='{"fluid": true}'>
+										<source src="./video/map.mp4" type="video/mp4" />
+										<p class="vjs-no-js">
+											To view this video please enable JavaScript, and consider upgrading to a
+											web browser that
+											<a href="https://videojs.com/html5-video-support/" target="_blank">supports
+												HTML5 video</a>
+										</p>
+									</video>
+								</div>
 							</div>
 						</div>
-						<div class="col-md ">
-							<div class="">
-								<video id="my-video" class="video-js mx-auto" controls preload="auto"
-									poster="./img/map-green.png" data-setup='{"fluid": true}'>
-									<source src="./video/map.mp4" type="video/mp4" />
-									<p class="vjs-no-js">
-										To view this video please enable JavaScript, and consider upgrading to a
-										web browser that
-										<a href="https://videojs.com/html5-video-support/" target="_blank">supports
-											HTML5 video</a>
-									</p>
-								</video>
-							</div>
 						</div>
 					</div>
-				</div>
+					<div id="service-1" class="service service-desactivate">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+							<article class="pt-3">
+								<p align="justify">
+									Description 2 </p>
+							</article>
+						</div>
+					</div>
+					<div id="service-2" class="service service-desactivate">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+							<article class="pt-3">
+								<p align="justify">
+									Description 3</p>
+							</article>
+						</div>
+					</div>
 				<br>
 			</div>
 		</div>
+		</div>
+		<div id="team" class="page grey lighten-2" data-aos="fade-up" data-aos-duration="1500">
+			<div>
+				<p class="green-text text-darken-3 d-flex justify-content-center title mb-5">
+					Team </p>
+				<div class="container ">
+					<div class="row text-center">
+						<div class="col-md mx-auto">
+							<div class="card">
+								<img src="./img/team/sadok.jpeg" class="card-img-top" alt="Sunset Over the Sea"/>
+								<div class="card-body">
+									<h5 class="card-title">Sadok BEN YAHIA</h5>
+								  <p class="card-text">Professor of Data Science, Tallinn University of Technology </p>
+								</div>
+							  </div>
+						</div>	
+						<div class="col-md mx-auto">
+							<div class="card">
+								<img src="./img/team/sabri.jpeg" class="card-img-top" alt="Sunset Over the Sea"/>
+								<div class="card-body">
+									<h5 class="card-title">Sabri ALLANI</h5>
+								  <p class="card-text">R&D project manager at OpenCEMS Industrial Chair</p>
+								</div>
+							  </div>
+						</div>	
+						<div class="col-md mx-auto">
+							<div class="card">
+								<img src="./img/team/chahinez.jpeg" class="card-img-top" alt="Sunset Over the Sea"/>
+								<div class="card-body">
+									<h5 class="card-title">Chahinez OUNOUGHI </h5>
+								  <p class="card-text">Ph.D. candidate at Tallinn University of Technology</p>
+								</div>
+							  </div>
+						</div>	
+						<div class="col-md mx-auto">
+							<div class="card">
+								<img src="./img/team/xavier.png" class="card-img-top" alt="Sunset Over the Sea"/>
+								<div class="card-body">
+									<h5 class="card-title">Xavier CORBIER</h5>
+								  <p class="card-text">Student in Computer Science and Management Engineering </p>
+								</div>
+							  </div>
+						</div>	
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="contact" class="page" data-aos="fade-up" data-aos-duration="1500">
 			<div class="container">
@@ -318,12 +384,16 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
 	<!-- Texte animated JavaScript -->
 	<script type="text/javascript" src="js/modules/text.js"></script>
+	<!-- Service loader JavaScript -->
+	<script type="text/javascript" src="js/modules/services.js"></script>
 	<!-- SmoothScrool JavaScript -->
 	<script type="text/javascript" src="js/modules/smoothScroll.js"></script>
 	<!-- AOS JavaScript -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- Video player -->
 	<script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
+	<!-- GlideJS JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 	<!-- Init modules JavaScript -->
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

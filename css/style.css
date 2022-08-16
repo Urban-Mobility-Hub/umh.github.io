@@ -1,87 +1,120 @@
 .view {
-    background: url("../img/background.jpg")no-repeat center center fixed;
-    background-size: cover;
+  background: url("../img/background.jpg")no-repeat center center fixed;
+  background-size: cover;
 }
+
 #contact {
-	background: url("../img/contact.jpg")no-repeat center center fixed;
-    background-size: cover;
+  background: url("../img/contact.jpg")no-repeat center center fixed;
+  background-size: cover;
 }
+
 .navbar {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .top-nav-collapse {
-    background-color: #087f23;
+  background-color: #087f23;
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #087f23;
-    }
+  .navbar {
+    background-color: #087f23;
+  }
 }
 
 header .view {
   height: 100vh;
 }
+
 .view #skip {
-    border: none;
-    display: block;
-    position: absolute;
-    bottom: 3.5rem;
-    left: 0;
-    right: 0;
-    height: 1.5rem;
+  border: none;
+  display: block;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 0;
+  right: 0;
+  height: 1.5rem;
 }
+
 hr {
   height: 1px;
   color: white;
   width: 15%;
 }
-nav{
-	box-shadow:none !important;
+
+nav {
+  box-shadow: none !important;
 }
+
 .right-text {
-	margin-right: 0;
+  margin-right: 0;
 }
+
 .left-text {
-	margin-left: 0;
+  margin-left: 0;
 }
+
 .title {
   font-size: 48px;
   line-height: 57px;
   font-weight: 700;
 }
+
 .page {
-	padding-top: 80px; 
-	padding-bottom: 80px; 
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
 article {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
+
 main {
-	padding: 0;
-	height: 100%;
+  padding: 0;
+  height: 100%;
 }
+
 body {
-	margin: 0;
-  font-family: GraphikSemiBold,sans-serif !important;
+  margin: 0;
+  font-family: GraphikSemiBold, sans-serif !important;
 }
+
 .navbar-dark .navbar-nav .nav-link.active {
   font-weight: bold;
 }
+
 .show {
   display: block !important;
 }
+
 .sub-info {
   font-size: 18px;
 }
+
 .sub-title {
   font-size: 22px;
   margin: auto;
   max-width: 768px;
 }
+
 .info {
   font-size: 28px;
   line-height: 1.2;
   font-weight: 400;
+}
+
+.service-desactivate {
+  display: none;
+}
+
+.btn-service {
+  color: white;
+}
+
+.btn-service-desactivate {
+  background-color: #4b636e;
+}
+
+.btn-service-activate {
+  background-color: #087f23;
 }
