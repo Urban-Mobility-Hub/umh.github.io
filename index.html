@@ -116,16 +116,18 @@
 							</div>
 						</div>
 						<div class="glide col-md-6 py-3">
-								<div class="glide__track" data-glide-el="track" style=" max-width: 100% !important;">
-									<ul class="glide__slides">
-										<li class="glide__slide "><img src="./img/objective1.png" alt="Service management" width="100%"></li>
-										<li class="glide__slide"><img src="./img/objective2.png" alt="Service management" width="100%"></li>
-									</ul>
-								</div>
-								<div class="glide__bullets text-center" data-glide-el="controls[nav]">
-								    <button class="glide__bullet" data-glide-dir="=0"></button>
-								    <button class="glide__bullet" data-glide-dir="=1"></button>
-								  </div>
+							<div class="glide__track" data-glide-el="track" style=" max-width: 100% !important;">
+								<ul class="glide__slides">
+									<li class="glide__slide "><img src="./img/objective1.png" alt="Service management"
+											width="100%"></li>
+									<li class="glide__slide"><img src="./img/objective2.png" alt="Service management"
+											width="100%"></li>
+								</ul>
+							</div>
+							<div class="glide__bullets text-center" data-glide-el="controls[nav]">
+								<button class="glide__bullet" data-glide-dir="=0"></button>
+								<button class="glide__bullet" data-glide-dir="=1"></button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -194,14 +196,17 @@
 			<div class="col-md-12">
 				<p class="green-text text-darken-3 d-flex justify-content-center title">
 					Services</p>
-					<div class="text-center mb-4">
-						<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)">Charging spots</button>
-						<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(1)">Urban noise</button>
-						<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">CO2 emission</button>
-					</div>
-					<div id="service-0" class="service ">
-						<div class="py-3">
-							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+				<div class="text-center mb-4">
+					<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)">Charging
+						spots</button>
+					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(1)">Urban
+						noise</button>
+					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">CO2
+						emission</button>
+				</div>
+				<div id="service-0" class="service ">
+					<div class="py-3">
+						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
 						<article class="pt-3">
 							<p align="justify">
 								Description </p>
@@ -209,7 +214,8 @@
 						<div class="row h-100 ">
 							<div class="col-md my-auto">
 								<div class="">
-									<p class="green-text text-darken-3 d-flex justify-content-start info">Demonstration</p>
+									<p class="green-text text-darken-3 d-flex justify-content-start info">Demonstration
+									</p>
 									<article>
 										<p class="sub-info">
 											Process of researching a route in the south of France in function of the
@@ -233,26 +239,44 @@
 								</div>
 							</div>
 						</div>
+						<div class="mt-5">
+							<p class="green-text text-darken-3 d-flex justify-content-center info">State of development</p>
+							<div class="progress w-50 mx-auto grey lighten-2 mt-3" style="height: 20px;">
+								<div class="progress-bar bg-progress " role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+							  </div>
 						</div>
 					</div>
-					<div id="service-1" class="service service-desactivate">
-						<div class="py-3">
-							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
-							<article class="pt-3">
-								<p align="justify">
-									Description 2 </p>
-							</article>
+				</div>
+				<div id="service-1" class="service service-desactivate">
+					<div class="py-3">
+						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+						<article class="pt-3">
+							<p align="justify">
+								Description 2 </p>
+						</article>
+						<div class="mt-5">
+							<p class="green-text text-darken-3 d-flex justify-content-center info">State of development</p>
+							<div class="progress w-50 mx-auto grey lighten-2 mt-3" style="height: 20px;">
+								<div class="progress-bar bg-progress " role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+							  </div>
 						</div>
 					</div>
-					<div id="service-2" class="service service-desactivate">
-						<div class="py-3">
-							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
-							<article class="pt-3">
-								<p align="justify">
-									Description 3</p>
-							</article>
+				</div>
+				<div id="service-2" class="service service-desactivate">
+					<div class="py-3">
+						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+						<article class="pt-3">
+							<p align="justify">
+								Description 3</p>
+						</article>
+						<div class="mt-5">
+							<p class="green-text text-darken-3 d-flex justify-content-center info">State of development</p>
+							<div class="progress w-50 mx-auto grey lighten-2 mt-3" style="height: 20px;">
+								<div class="progress-bar bg-progress " role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+							  </div>
 						</div>
 					</div>
+				</div>
 				<br>
 			</div>
 		</div>
@@ -265,40 +289,41 @@
 					<div class="row text-center">
 						<div class="col-md mx-auto">
 							<div class="card">
-								<img src="./img/team/sadok.jpeg" class="card-img-top" alt="Sunset Over the Sea"/>
+								<img src="./img/team/sadok.jpeg" class="card-img-top" alt="Sunset Over the Sea" />
 								<div class="card-body">
 									<h5 class="card-title">Sadok BEN YAHIA</h5>
-								  <p class="card-text">Professor of Data Science, Tallinn University of Technology </p>
+									<p class="card-text">Professor of Data Science, Tallinn University of Technology
+									</p>
 								</div>
-							  </div>
-						</div>	
+							</div>
+						</div>
 						<div class="col-md mx-auto">
 							<div class="card">
-								<img src="./img/team/sabri.jpeg" class="card-img-top" alt="Sunset Over the Sea"/>
+								<img src="./img/team/sabri.jpeg" class="card-img-top" alt="Sunset Over the Sea" />
 								<div class="card-body">
 									<h5 class="card-title">Sabri ALLANI</h5>
-								  <p class="card-text">R&D project manager at OpenCEMS Industrial Chair</p>
+									<p class="card-text">R&D project manager at OpenCEMS Industrial Chair</p>
 								</div>
-							  </div>
-						</div>	
+							</div>
+						</div>
 						<div class="col-md mx-auto">
 							<div class="card">
-								<img src="./img/team/chahinez.jpeg" class="card-img-top" alt="Sunset Over the Sea"/>
+								<img src="./img/team/chahinez.jpeg" class="card-img-top" alt="Sunset Over the Sea" />
 								<div class="card-body">
 									<h5 class="card-title">Chahinez OUNOUGHI </h5>
-								  <p class="card-text">Ph.D. candidate at Tallinn University of Technology</p>
+									<p class="card-text">Ph.D. candidate at Tallinn University of Technology</p>
 								</div>
-							  </div>
-						</div>	
+							</div>
+						</div>
 						<div class="col-md mx-auto">
 							<div class="card">
-								<img src="./img/team/xavier.png" class="card-img-top" alt="Sunset Over the Sea"/>
+								<img src="./img/team/xavier.png" class="card-img-top" alt="Sunset Over the Sea" />
 								<div class="card-body">
 									<h5 class="card-title">Xavier CORBIER</h5>
-								  <p class="card-text">Student in Computer Science and Management Engineering </p>
+									<p class="card-text">Student in Computer Science and Management Engineering </p>
 								</div>
-							  </div>
-						</div>	
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
