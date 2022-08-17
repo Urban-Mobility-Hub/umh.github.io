@@ -25,8 +25,8 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.4/css/flag-icons.min.css" rel="stylesheet">
 	<!-- Your custom styles (optional) -->
 	<link href="css/style.css" rel="stylesheet">
-	<!-- Custom styles AOS -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Custom styles AOS <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
 	<!-- Video player -->
 	<link href="https://vjs.zencdn.net/7.20.1/video-js.css" rel="stylesheet" />
 	<!-- Custom styles GlideJs -->
@@ -80,215 +80,230 @@
 	</header>
 	<!--Main Navigation-->
 	<!--Main Layout-->
-	<main class="green lighten-5">
-		<div id="abstract" class="container page">
-			<div class="col-md-12">
-				<div data-aos="fade-up" data-aos-duration="1000">
-					<p class="green-text text-darken-3 d-flex justify-content-center title">
-						Abstract
-					</p>
-					<article class="pt-3">
-						<p align="justify">
-							We don't need to explain how bad the planet is, with global warming, melting ice, floods and
-							forest fires. This project aims to be a hub that brings together different services that
-							will allow people who are involved in making ecological decisions for cities, to be able to
-							help the planet to recover its health a little. </p>
-						<p align="justify">
-							It could contain services that give information about fine particle pollution, if the car
-							drivers have an ecological driving, and even information about noise pollution. Because yes,
-							noise pollution impacts nature.
-						</p>
-						<p align="justify">
-							The first service developed focuses on data from electric vehicle charging spots. This data
-							will be accessible with a dashboard to be able to analyze it, and with a mobile application
-							to
-							help electric car drivers in their search for charging spots.
-					</article>
-					<div class="row h-100  py-4">
-						<div class="col-md my-auto py-3">
-							<div class="">
-								<p class="green-text text-darken-3 d-flex justify-content-start info">Objective</p>
-								<article>
-									<p class="sub-info">
-										Final dashboard objective
-									</p>
-								</article>
-							</div>
-						</div>
-						<div class="glide col-md-6 py-3">
-							<div class="glide__track" data-glide-el="track" style=" max-width: 100% !important;">
-								<ul class="glide__slides">
-									<li class="glide__slide "><img src="./img/objective1.png" alt="Service management"
-											width="100%"></li>
-									<li class="glide__slide"><img src="./img/objective2.png" alt="Service management"
-											width="100%"></li>
-								</ul>
-							</div>
-							<div class="glide__bullets text-center" data-glide-el="controls[nav]">
-								<button class="glide__bullet" data-glide-dir="=0"></button>
-								<button class="glide__bullet" data-glide-dir="=1"></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="dashboard" class="page grey lighten-2" data-aos="fade-up" data-aos-duration="1000">
+	<main class="green lighten-5" style="background-image: url(./img/background/d.svg);background-size: cover;">
+		<div id="abstract" class=" page">
 			<div class="container">
 				<div class="col-md-12">
-					<p class="green-text text-darken-3 d-flex justify-content-center title">
-						UMH Dashboard </p>
-					<article class="py-2">
-						<p class="sub-title text-center">
-							A management tool that gathers services and contains elements to analyze them.
+					<div data-aos="fade-up" data-aos-duration="1000">
+						<p class="green-text text-darken-3 d-flex justify-content-center title">
+							Abstract
 						</p>
-					</article>
-					<div class="row h-100  py-4">
-						<div class="col-md my-auto py-3">
-							<div class="">
-								<p class="green-text text-darken-3 d-flex justify-content-start info">Services</p>
-								<article>
-									<p class="sub-info">
-										Select services and grants access to selected cities.
-									</p>
-								</article>
-							</div>
-						</div>
-						<div class="col-md py-3">
-							<img src="./img/dashboard/services.png" alt="Service management" width="100%">
-						</div>
-					</div>
-					<div class="row h-100 py-4">
-						<div class="col-md py-3">
-							<img src="./img/dashboard/map.png" alt="Widget management" width="100%">
-						</div>
-						<div class="col-md my-auto py-3">
-							<div class="">
-								<p class="green-text text-darken-3 d-flex justify-content-start info">Widgets</p>
-								<article>
-									<p class="sub-info">
-										Select the source and the widget that you want to display.
-									</p>
-								</article>
-							</div>
-						</div>
-					</div>
-					<div class="row h-100  py-4">
-						<div class="col-md my-auto py-3">
-							<div class="">
-								<p class="green-text text-darken-3 d-flex justify-content-start info">Machine Learning
-								</p>
-								<article>
-									<p class="sub-info">
-										Manage and train your service model as you want.
-									</p>
-								</article>
-							</div>
-						</div>
-						<div class="col-md py-3">
-							<img src="./img/dashboard/learning.png" alt="Service management" width="100%">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="services" class="container page" data-aos="fade-up" data-aos-duration="1000">
-			<div class="col-md-12">
-				<p class="green-text text-darken-3 d-flex justify-content-center title">
-					Services</p>
-				<div class=" mb-4 mx-auto text-center">
-					<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)"> 
-						Charging spots 
-						<span class="icon-service fab mx-1">80%</span>
-					</button>
-					<button type="button" class="btn btn-service btn-service-desactivate align-items-center " onclick="loadService(1)">
-						Urban noise
-						<span class="icon-service fab mx-1 icon-desactivate">50%</span>
-					</button>
-					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">
-						CO2 emission
-						<span class="icon-service fab mx-1 icon-desactivate">50%</span>
-					</button>
-					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(3)">
-						Vehicle counting
-						<span class="icon-service fab mx-1 icon-desactivate">20%</span>
-					</button>
-				</div>
-				<div id="service-0" class="service ">
-					<div class="py-3">
-						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
 						<article class="pt-3">
 							<p align="justify">
-								Charging Spot Availability Prediction and recommendation
+								We don't need to explain how bad the planet is, with global warming, melting ice, floods
+								and
+								forest fires. This project aims to be a hub that brings together different services that
+								will allow people who are involved in making ecological decisions for cities, to be able
+								to
+								help the planet to recover its health a little. </p>
+							<p align="justify">
+								It could contain services that give information about fine particle pollution, if the
+								car
+								drivers have an ecological driving, and even information about noise pollution. Because
+								yes,
+								noise pollution impacts nature.
 							</p>
+							<p align="justify">
+								The first service developed focuses on data from electric vehicle charging spots. This
+								data
+								will be accessible with a dashboard to be able to analyze it, and with a mobile
+								application
+								to
+								help electric car drivers in their search for charging spots.
 						</article>
-						<div class="row h-100 ">
-							<div class="col-md my-auto">
+						<div class="row h-100  py-4">
+							<div class="col-md my-auto py-3">
 								<div class="">
-									<p class="green-text text-darken-3 d-flex justify-content-start info">Demonstration
-									</p>
+									<p class="green-text text-darken-3 d-flex justify-content-start info">Objective</p>
 									<article>
 										<p class="sub-info">
-											Process of researching a route in the south of France in function of the
-											preferences of the driver.
+											Final dashboard objective
 										</p>
 									</article>
 								</div>
 							</div>
-							<div class="col-md ">
-								<div class="">
-									<video id="my-video" class="video-js mx-auto" controls preload="auto"
-										poster="./img/map-green.png" data-setup='{"fluid": true}'>
-										<source src="./video/map.mp4" type="video/mp4" />
-										<p class="vjs-no-js">
-											To view this video please enable JavaScript, and consider upgrading to a
-											web browser that
-											<a href="https://videojs.com/html5-video-support/" target="_blank">supports
-												HTML5 video</a>
-										</p>
-									</video>
+							<div class="glide col-md-6 py-3">
+								<div class="glide__track" data-glide-el="track" style=" max-width: 100% !important;">
+									<ul class="glide__slides">
+										<li class="glide__slide "><img src="./img/objective1.png"
+												alt="Service management" width="100%"></li>
+										<li class="glide__slide"><img src="./img/objective2.png"
+												alt="Service management" width="100%"></li>
+									</ul>
+								</div>
+								<div class="glide__bullets text-center" data-glide-el="controls[nav]">
+									<button class="glide__bullet" data-glide-dir="=0"></button>
+									<button class="glide__bullet" data-glide-dir="=1"></button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="service-1" class="service service-desactivate">
-					<div class="py-3">
-						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
-						<article class="pt-3">
-							<p align="justify">
-								Real-time Urban Noise analyses and near-future prediction 
+			</div>
+
+		</div>
+		<div style="background-image: url(./img/background/a.svg);background-size: cover;">
+			<div id="dashboard" class="page " data-aos="fade-up" data-aos-duration="1000">
+				<div class="container">
+					<div class="col-md-12">
+						<p class="green-text text-darken-3 d-flex justify-content-center title">
+							UMH Dashboard </p>
+						<article class="py-2">
+							<p class="sub-title text-center">
+								A management tool that gathers services and contains elements to analyze them.
 							</p>
 						</article>
+						<div class="row h-100  py-4">
+							<div class="col-md my-auto py-3">
+								<div class="">
+									<p class="green-text text-darken-3 d-flex justify-content-start info">Services</p>
+									<article>
+										<p class="sub-info">
+											Select services and grants access to selected cities.
+										</p>
+									</article>
+								</div>
+							</div>
+							<div class="col-md py-3">
+								<img src="./img/dashboard/services.png" alt="Service management" width="100%">
+							</div>
+						</div>
+						<div class="row h-100 py-4">
+							<div class="col-md py-3">
+								<img src="./img/dashboard/map.png" alt="Widget management" width="100%">
+							</div>
+							<div class="col-md my-auto py-3">
+								<div class="">
+									<p class="green-text text-darken-3 d-flex justify-content-start info">Widgets</p>
+									<article>
+										<p class="sub-info">
+											Select the source and the widget that you want to display.
+										</p>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="row h-100  py-4">
+							<div class="col-md my-auto py-3">
+								<div class="">
+									<p class="green-text text-darken-3 d-flex justify-content-start info">Machine
+										Learning
+									</p>
+									<article>
+										<p class="sub-info">
+											Manage and train your service model as you want.
+										</p>
+									</article>
+								</div>
+							</div>
+							<div class="col-md py-3">
+								<img src="./img/dashboard/learning.png" alt="Service management" width="100%">
+							</div>
+						</div>
 					</div>
 				</div>
-				<div id="service-2" class="service service-desactivate">
-					<div class="py-3">
-						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
-						<article class="pt-3">
-							<p align="justify">
-								Real-time Co2Emission analyses and near-future prediction
-							</p>
-						</article>
+			</div>
+			<div id="services" class="container page" data-aos="fade-up" data-aos-duration="1000">
+				<div class="col-md-12">
+					<p class="green-text text-darken-3 d-flex justify-content-center title">
+						Services</p>
+					<div class=" mb-4 mx-auto text-center">
+						<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)">
+							Charging spots
+							<span class="icon-service fab mx-1">80%</span>
+						</button>
+						<button type="button" class="btn btn-service btn-service-desactivate align-items-center "
+							onclick="loadService(1)">
+							Urban noise
+							<span class="icon-service fab mx-1 icon-desactivate">50%</span>
+						</button>
+						<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">
+							CO2 emission
+							<span class="icon-service fab mx-1 icon-desactivate">50%</span>
+						</button>
+						<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(3)">
+							Vehicle counting
+							<span class="icon-service fab mx-1 icon-desactivate">20%</span>
+						</button>
 					</div>
-				</div>
-				<div id="service-3" class="service service-desactivate">
-					<div class="py-3">
-						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
-						<article class="pt-3">
-							<p align="justify">
-								Intelligent vehicle counting and classification
-							</p>
-						</article>
+					<div id="service-0" class="service ">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+							<article class="pt-3">
+								<p align="justify">
+									Charging Spot Availability Prediction and recommendation
+								</p>
+							</article>
+							<div class="row h-100 ">
+								<div class="col-md my-auto">
+									<div class="">
+										<p class="green-text text-darken-3 d-flex justify-content-start info">
+											Demonstration
+										</p>
+										<article>
+											<p class="sub-info">
+												Process of researching a route in the south of France in function of the
+												preferences of the driver.
+											</p>
+										</article>
+									</div>
+								</div>
+								<div class="col-md ">
+									<div class="">
+										<video id="my-video" class="video-js mx-auto" controls preload="auto"
+											poster="./img/map-green.png" data-setup='{"fluid": true}'>
+											<source src="./video/map.mp4" type="video/mp4" />
+											<p class="vjs-no-js">
+												To view this video please enable JavaScript, and consider upgrading to a
+												web browser that
+												<a href="https://videojs.com/html5-video-support/"
+													target="_blank">supports
+													HTML5 video</a>
+											</p>
+										</video>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+					<div id="service-1" class="service service-desactivate">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+							<article class="pt-3">
+								<p align="justify">
+									Real-time Urban Noise analyses and near-future prediction
+								</p>
+							</article>
+						</div>
+					</div>
+					<div id="service-2" class="service service-desactivate">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+							<article class="pt-3">
+								<p align="justify">
+									Real-time Co2Emission analyses and near-future prediction
+								</p>
+							</article>
+						</div>
+					</div>
+					<div id="service-3" class="service service-desactivate">
+						<div class="py-3">
+							<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+							<article class="pt-3">
+								<p align="justify">
+									Intelligent vehicle counting and classification
+								</p>
+							</article>
+						</div>
+					</div>
+					<br>
 				</div>
-				<br>
 			</div>
 		</div>
-		</div>
-		<div id="team" class="page grey lighten-2" data-aos="fade-up" data-aos-duration="1500">
-			<div>
-				<p class="green-text text-darken-3 d-flex justify-content-center title mb-5">
+
+		<div id="team" class="page " data-aos="fade-up" data-aos-duration="1500" style="background-image: url(./img/background/b.svg);background-size: cover;">
+			<div >
+				<p class="green-text text-darken-3 d-flex justify-content-center title mb-5 mt-5">
 					Team </p>
 				<div class="container ">
 					<div class="row text-center">
@@ -333,12 +348,12 @@
 				</div>
 			</div>
 		</div>
-		<div id="contact" class="page" data-aos="fade-up" data-aos-duration="1500">
+		<div id="contact" class="page white" data-aos="fade-up" data-aos-duration="1500">
 			<div class="container">
 				<div class="col-md-12">
 
 					<article>
-						<div class="text-center border border-light p-5 white">
+						<div class="text-center ">
 							<p class="green-text text-darken-3 text-center title">
 								Keep in contact </p>
 							<p class="mt-5 sub-info mb-4">
@@ -418,8 +433,8 @@
 	<script type="text/javascript" src="js/modules/services.js"></script>
 	<!-- SmoothScrool JavaScript -->
 	<script type="text/javascript" src="js/modules/smoothScroll.js"></script>
-	<!-- AOS JavaScript -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- AOS JavaScript <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+
 	<!-- Video player -->
 	<script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
 	<!-- GlideJS JavaScript -->
