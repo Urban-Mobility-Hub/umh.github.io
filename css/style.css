@@ -107,7 +107,7 @@ body {
   display: none;
 }
 
-.btn-service {
+.btn-service, .btn-service:hover {
   color: white;
 }
 
@@ -121,4 +121,17 @@ body {
 
 .bg-progress {
   background-color: #087f23;
+}
+
+.icon-service {
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid white;
+  text-align: center;
+  font: 9px Arial, sans-serif;
+  font-weight: bold;
+}
+
+.icon-desactivate {
+  display: none;
 }

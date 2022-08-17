@@ -196,20 +196,31 @@
 			<div class="col-md-12">
 				<p class="green-text text-darken-3 d-flex justify-content-center title">
 					Services</p>
-				<div class="text-center mb-4">
-					<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)">Charging
-						spots</button>
-					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(1)">Urban
-						noise</button>
-					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">CO2
-						emission</button>
+				<div class=" mb-4 mx-auto text-center">
+					<button type="button" class="btn btn-service btn-service-activate" onclick="loadService(0)"> 
+						Charging spots 
+						<span class="icon-service fab mx-1">80%</span>
+					</button>
+					<button type="button" class="btn btn-service btn-service-desactivate align-items-center " onclick="loadService(1)">
+						Urban noise
+						<span class="icon-service fab mx-1 icon-desactivate">50%</span>
+					</button>
+					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(2)">
+						CO2 emission
+						<span class="icon-service fab mx-1 icon-desactivate">50%</span>
+					</button>
+					<button type="button" class="btn btn-service btn-service-desactivate" onclick="loadService(3)">
+						Vehicle counting
+						<span class="icon-service fab mx-1 icon-desactivate">20%</span>
+					</button>
 				</div>
 				<div id="service-0" class="service ">
 					<div class="py-3">
 						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
 						<article class="pt-3">
 							<p align="justify">
-								Description </p>
+								Charging Spot Availability Prediction and recommendation
+							</p>
 						</article>
 						<div class="row h-100 ">
 							<div class="col-md my-auto">
@@ -239,12 +250,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="mt-5">
-							<p class="green-text text-darken-3 d-flex justify-content-center info">State of development</p>
-							<div class="progress w-50 mx-auto grey lighten-2 mt-3" style="height: 20px;">
-								<div class="progress-bar bg-progress " role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-							  </div>
-						</div>
 					</div>
 				</div>
 				<div id="service-1" class="service service-desactivate">
@@ -252,14 +257,9 @@
 						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
 						<article class="pt-3">
 							<p align="justify">
-								Description 2 </p>
+								Real-time Urban Noise analyses and near-future prediction 
+							</p>
 						</article>
-						<div class="mt-5">
-							<p class="green-text text-darken-3 d-flex justify-content-center info">State of development</p>
-							<div class="progress w-50 mx-auto grey lighten-2 mt-3" style="height: 20px;">
-								<div class="progress-bar bg-progress " role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-							  </div>
-						</div>
 					</div>
 				</div>
 				<div id="service-2" class="service service-desactivate">
@@ -267,14 +267,19 @@
 						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
 						<article class="pt-3">
 							<p align="justify">
-								Description 3</p>
+								Real-time Co2Emission analyses and near-future prediction
+							</p>
 						</article>
-						<div class="mt-5">
-							<p class="green-text text-darken-3 d-flex justify-content-center info">State of development</p>
-							<div class="progress w-50 mx-auto grey lighten-2 mt-3" style="height: 20px;">
-								<div class="progress-bar bg-progress " role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-							  </div>
-						</div>
+					</div>
+				</div>
+				<div id="service-3" class="service service-desactivate">
+					<div class="py-3">
+						<p class="green-text text-darken-3 d-flex justify-content-start info">Description</p>
+						<article class="pt-3">
+							<p align="justify">
+								Intelligent vehicle counting and classification
+							</p>
+						</article>
 					</div>
 				</div>
 				<br>
