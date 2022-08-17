@@ -8,12 +8,12 @@
 }
 
 .top-nav-collapse {
-  background:  linear-gradient(180deg,#4caf50,  #087f23);;
+  background:  linear-gradient(180deg,#4caf50,  #087f23);
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #087f23;
+    background:  linear-gradient(180deg,#4caf50,  #087f23);
   }
 }
 
